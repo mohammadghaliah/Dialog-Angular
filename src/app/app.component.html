@@ -1,0 +1,34 @@
+<p>Dialog</p>
+
+<!-- https://blog.angular-university.io/angular-material-dialog/ -->
+
+<!-- const dialog = this.dialog.open(UserEditDialogComponent, { data: { entity: userObj }, panelClass: ['animate__animated', 'animate__slideInRight'], position: { right: '0' }, height: '100%', width: '50%' }) -->
+
+<!-- component بدي انادي ال dialog فيه -->
+<!-- openVerificationDialog() {
+  const dialogRef = this.dialog.open(VerificationDialogComponent, {
+     data: { email: this.sendRegisterationOtpByEmailModel.email, sendRegisterationOtpByEmailVM: this.sendRegisterationOtpByEmailModel},
+     panelClass: ['verification-dialog']
+  });
+
+  dialogRef.afterClosed().subscribe(({ isVerified, passToken, error }: { isVerified: boolean, passToken: string, error: any }) => {
+     this.registerUser.passToken = passToken;
+     this.isVerifiedEmail = isVerified;
+     this.error = error;
+     if(this.error){
+        this.isError = true;
+     }
+  });
+} -->
+
+<!-- DialogComponent: -->
+<!-- constructor(
+  private dialogRef: MatDialogRef<SubscriptionComponent>,
+  @Inject(MAT_DIALOG_DATA) public data: { email: string, sendRegisterationOtpByEmailVM: SendRegisterationOtpByEmailVM }) {
+  dialogRef.disableClose = true;
+
+  email = this.data.email;
+} -->
+<!-- closeDialog(isVerified: boolean = false) {
+  this.dialogRef.close({ isVerified, passToken: this.emailPassToken.passToken, error: this.error });
+} -->
